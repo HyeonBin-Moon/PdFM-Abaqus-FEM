@@ -4,7 +4,6 @@ Finite element model used for the electromechanical nanoindentation simulations 
 
 **Cho et al., "Nanoscale frictional imaging of ferroelectric domains."**
 
-Paper link: *to be added after publication*
 DOI: *to be added after publication*
 
 

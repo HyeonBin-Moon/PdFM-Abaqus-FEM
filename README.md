@@ -142,7 +142,7 @@ abaqus job=example_job input=Abaqus_inp.inp user=Subroutine_UEL_up.for
 
 If you use this code or find this repository useful for your research, please cite the associated publication:
 
-Cho, S., Moon, H., et al.  
+Cho et al.  
 **Nanoscale frictional imaging of ferroelectric domains**
 
 DOI: *to be added after publication*

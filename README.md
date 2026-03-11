@@ -131,3 +131,14 @@ Example command:
 
 ```bash
 abaqus job=example_job input=Abaqus_inp.inp user=Subroutine_UEL_up.for
+```
+---
+
+## 📚 Citation
+
+If you use this code or find this repository useful for your research, please cite the following paper:
+
+Cho, S., Moon, H., et al.  
+**Nanoscale frictional imaging of ferroelectric domains**
+
+DOI: https://doi.org/xxxxx

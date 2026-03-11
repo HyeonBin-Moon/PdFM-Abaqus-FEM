@@ -60,7 +60,6 @@ The domain polarity is introduced by **reversing the sign of the piezoelectric t
 
 ## Repository Structure
 
-```markdown
 ```text
 PdFM-Abaqus-FEM
 │
@@ -71,7 +70,7 @@ PdFM-Abaqus-FEM
 │
 ├── LICENSE
 └── README.md
-
+```
 ---
 
 # Files

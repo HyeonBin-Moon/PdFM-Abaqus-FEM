@@ -5,6 +5,7 @@ Finite element model used for the electromechanical nanoindentation simulations 
 **Cho et al., "Nanoscale frictional imaging of ferroelectric domains."**
 
 Paper link: *to be added after publication*
+DOI: *to be added after publication*
 
 
 This repository contains the Abaqus finite element model used to reproduce the electromechanical simulations reported in the paper. The code analyzes the **polarity-dependent indentation response of ferroelectric domains** in polarization-derived friction microscopy (PdFM).
@@ -136,9 +137,9 @@ abaqus job=example_job input=Abaqus_inp.inp user=Subroutine_UEL_up.for
 
 ## 📚 Citation
 
-If you use this code or find this repository useful for your research, please cite the following paper:
+If you use this code or find this repository useful for your research, please cite the associated publication:
 
 Cho, S., Moon, H., et al.  
 **Nanoscale frictional imaging of ferroelectric domains**
 
-DOI: https://doi.org/xxxxx
+DOI: *to be added after publication*

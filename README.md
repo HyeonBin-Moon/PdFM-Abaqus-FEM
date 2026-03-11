@@ -57,10 +57,11 @@ Two domain polarizations are simulated:
 
 The domain polarity is introduced by **reversing the sign of the piezoelectric tensor**, while keeping all other material parameters unchanged.
 
----
 
 ## Repository Structure
 
+```markdown
+```text
 PdFM-Abaqus-FEM
 │
 ├── abaqus_model

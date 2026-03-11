@@ -125,8 +125,7 @@ The simulations evaluate:
 
 The simulations are executed in **Abaqus with a user-defined element (UEL)**.
 
-### Up-polarized domain
+Example command:
 
 ```bash
-abaqus job=PdFM_up input=Abaqus_inp.inp user=Subroutine_UEL_up.for
-
+abaqus job=example_job input=Abaqus_inp.inp user=Subroutine_UEL_up.for

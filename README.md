@@ -2,7 +2,7 @@
 
 ![Abaqus](https://img.shields.io/badge/Abaqus-FEM-blue)
 ![Language](https://img.shields.io/badge/Language-Fortran-orange)
-![Method](https://img.shields.io/badge/Method-Flexoelectricity-green)
+![Method](https://img.shields.io/badge/Method-MixedFEM-green)
 
 Finite element model used for the electromechanical nanoindentation simulations reported in:
 

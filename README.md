@@ -1,6 +1,5 @@
 # PdFM-Abaqus-FEM
 
-> Finite element implementation of the electromechanical nanoindentation model used in polarization-derived friction microscopy (PdFM).
 
 Finite element model used for the electromechanical nanoindentation simulations reported in:
 

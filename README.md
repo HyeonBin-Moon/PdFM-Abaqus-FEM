@@ -1,6 +1,8 @@
 # PdFM-Abaqus-FEM
 
-Finite element model used for the electromechanical nanoindentation simulations in:
+> Finite element implementation of the electromechanical nanoindentation model used in polarization-derived friction microscopy (PdFM).
+
+Finite element model used for the electromechanical nanoindentation simulations reported in:
 
 **Cho et al., "Nanoscale frictional imaging of ferroelectric domains."**
 
@@ -8,7 +10,7 @@ This repository contains the Abaqus finite element model used to reproduce the e
 
 ---
 
-# Physical Background
+## 🔬 Physical Background
 
 Polarization-derived friction microscopy (PdFM) visualizes ferroelectric domains through friction contrast measured during AFM scanning.
 
@@ -22,9 +24,9 @@ As a result:
 
 This difference leads to **polarity-dependent electromechanical stiffness**, producing measurable differences in indentation response such as:
 
-- indentation force  
-- contact area  
-- effective stiffness  
+- **Indentation force**
+- **Contact area**
+- **Effective stiffness**
 
 These mechanical differences contribute to the **friction asymmetry observed in PdFM experiments**.
 
@@ -34,17 +36,17 @@ The present FEM simulations were performed to quantitatively analyze this mechan
 
 ---
 
-# Model Description
+## ⚙️ Model Description
 
 The simulations model **axisymmetric nanoindentation of a ferroelectric half-space by a rigid spherical indenter**.
 
 The continuum formulation includes the following coupled physical effects:
 
-- Linear elasticity  
-- Dielectric response  
-- Piezoelectric coupling  
-- Flexoelectric coupling  
-- Strain-gradient elasticity  
+- **Linear elasticity**
+- **Dielectric response**
+- **Piezoelectric coupling**
+- **Flexoelectric coupling**
+- **Strain-gradient elasticity**
 
 The governing equations are implemented in **Abaqus using a user-defined element (UEL)**.
 
@@ -57,8 +59,10 @@ Two domain polarizations are simulated:
 
 The domain polarity is introduced by **reversing the sign of the piezoelectric tensor**, while keeping all other material parameters unchanged.
 
+---
 
-## Repository Structure
+## 📂 Repository Structure
+
 
 ```text
 PdFM-Abaqus-FEM
@@ -73,9 +77,12 @@ PdFM-Abaqus-FEM
 ```
 ---
 
-# Files
 
-### Abaqus_inp.inp
+---
+
+## 📁 Files
+
+### `Abaqus_inp.inp`
 
 Abaqus input file defining the **axisymmetric indentation model**, including:
 
@@ -85,11 +92,11 @@ Abaqus input file defining the **axisymmetric indentation model**, including:
 - material parameters  
 - user element call  
 
-### Subroutine_UEL_up.for
+### `Subroutine_UEL_up.for`
 
 User-defined element (UEL) implementation for the **up-polarized ferroelectric domain**.
 
-### Subroutine_UEL_down.for
+### `Subroutine_UEL_down.for`
 
 User-defined element (UEL) implementation for the **down-polarized ferroelectric domain**.
 
@@ -97,33 +104,32 @@ The two subroutines differ only in the **sign of the piezoelectric coupling**, r
 
 ---
 
-# Simulation Setup
+## ⚙️ Simulation Setup
 
 The indentation model corresponds to the configuration described in the paper.
 
-Key features include:
+**Key features:**
 
-- axisymmetric finite element model  
-- rigid spherical indenter  
-- nanoscale indentation depth  
-- hard contact in the normal direction  
-- frictionless tangential contact  
+- Axisymmetric finite element model  
+- Rigid spherical indenter  
+- Nanoscale indentation depth  
+- Hard contact in the normal direction  
+- Frictionless tangential contact  
 
 The simulations evaluate:
 
-- indentation force–depth relationship  
-- polarity-dependent electromechanical stiffness  
-- differences in contact mechanics between ferroelectric domains  
+- **Indentation force–depth relationship**
+- **Polarity-dependent electromechanical stiffness**
+- **Differences in contact mechanics between ferroelectric domains**
 
 ---
 
-# Running the Simulation
+## ▶️ Running the Simulation
 
-The simulations are executed in Abaqus with a user subroutine.
+The simulations are executed in **Abaqus with a user-defined element (UEL)**.
 
-### Up domain
+### Up-polarized domain
 
 ```bash
-abaqus job=PdFM_up user=Subroutine_UEL_up.for input=Abaqus_inp.inp
-
+abaqus job=PdFM_up input=Abaqus_inp.inp user=Subroutine_UEL_up.for
 
